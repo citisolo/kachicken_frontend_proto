@@ -1,0 +1,55 @@
+Arguments: 
+  /usr/local/bin/node /usr/share/yarn/bin/yarn.js install
+
+PATH: 
+  /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+
+Yarn version: 
+  1.13.0
+
+Node version: 
+  10.13.0
+
+Platform: 
+  linux x64
+
+Trace: 
+  SyntaxError: /home/redbandit/coursera/full-stack-course/Bootstrap4/kachicken/package.json: Unexpected token } in JSON at position 403
+      at JSON.parse (<anonymous>)
+      at /usr/share/yarn/lib/cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (/usr/share/yarn/lib/cli.js:304:30)
+      at /usr/share/yarn/lib/cli.js:315:13
+
+npm manifest: 
+  {
+    "name": "kachicken",
+    "version": "1.0.0",
+    "description": "Meal planning sharing app",
+    "main": "index.html",
+    "scripts": {
+      "start": "npm run lite",
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "lite": "lite-server",
+      "scss":"node-sass -o css/ css/"
+    },
+    "author": "",
+    "license": "MIT",
+    "devDependencies":{
+      "lite-server": "^2.3.0",
+      "node-sass":"^4.7.2",
+    },
+    "dependencies": {
+      "bootstrap": "^4.0.0",
+      "bootstrap-social": "^5.1.1",
+      "font-awesome": "^4.7.0",
+      "jquery": "^3.3.1",
+      "popper.js": "^1.12.9"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

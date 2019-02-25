@@ -1,0 +1,79 @@
+@font-face {
+  font-family: "Coiny";
+  src: url("css/fonts/coiny-v4-latin-regular.eot");
+  src: url("css/fonts/coiny-v4-latin-regular.woff") format("woff"), url("css/fonts/coiny-v4-latin-regular.svg#filename") format("svg"); }
+
+.row-header {
+  margin: 0px auto;
+  padding: 0px 0px; }
+
+.row-content {
+  margin: 0px auto;
+  padding: 50px 0px;
+  min-height: 400px; }
+
+body {
+  padding: 50px 0px 0px 0px;
+  z-index: 0; }
+
+@media screen and (min-width: 600px) {
+  .collapse.navbar-collapse {
+    margin-left: 30px; } }
+
+.navbar-dark {
+  background-color: #00887A; }
+
+.footer {
+  background-color: #FFCCBC;
+  margin: 0px auto;
+  padding: 20px 0px; }
+  .footer a {
+    color: #00887A; }
+
+.jumbotron {
+  margin: 0px auto;
+  padding: 70px 30px;
+  background: #00887A;
+  color: floralwhite;
+  font-family: 'Coiny'; }
+  .jumbotron .card-header {
+    color: #00887A; }
+
+.splash {
+  margin-top: 30px;
+  margin-bottom: 10px; }
+
+.carousel {
+  background: #00887A; }
+  .carousel .carousel-item {
+    height: 300px; }
+    .carousel .carousel-item img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      min-height: 300px;
+      max-width: 300px; }
+
+.menu-card {
+  width: 10rem;
+  margin-right: 10px; }
+  .menu-card .img {
+    height: 30px;
+    width: 30px; }
+  .menu-card .card-body {
+    background-color: #00887A; }
+    .menu-card .card-body a {
+      color: #FFFFFF; }
+
+@media only screen and (max-width: 600px) {
+  .menu-card {
+    width: 20rem;
+    margin-top: 20px; }
+  .jumbotron {
+    margin: 0px;
+    padding: 0px; }
+    .jumbotron .container-fluid {
+      margin: 0px;
+      padding: 0px; }
+      .jumbotron .container-fluid #image {
+        padding: 0px; } }

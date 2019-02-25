@@ -1,0 +1,139 @@
+
+// flat colours
+$swarthy-green : #00887A;
+$sky-blue: #77A6F7;
+$flesh-colour: #FFCCBC;
+$whitey: #FFFFFF;
+
+$break-large: 600px;
+
+$carousel-item-height: 300px;
+
+@font-face {
+  font-family:"Coiny";
+  src:url("css/fonts/coiny-v4-latin-regular.eot");
+  src:
+    url('css/fonts/coiny-v4-latin-regular.woff') format("woff"),
+    url('css/fonts/coiny-v4-latin-regular.svg#filename') format("svg");
+}
+
+@mixin zero-margin($pad-up-dn, $pad-left-right){
+  margin: 0px auto;
+  padding: $pad-up-dn $pad-left-right;
+}
+
+.row-header {
+  @include zero-margin(0px, 0px);
+}
+
+.row-content {
+  @include zero-margin(50px, 0px);
+  // border-bottom: 1px ridge;
+  min-height: 400px;
+}
+
+body{
+  padding:50px 0px 0px 0px;
+  z-index:0;
+}
+
+
+ @media screen and (min-width: $break-large){
+   .collapse.navbar-collapse{
+     margin-left: 30px;
+     // .nav-item {
+     //   margin-left:15px;
+     // }
+   }
+
+ }
+
+
+
+
+.navbar-dark {
+  background-color: $swarthy-green;
+}
+
+.footer {
+  background-color: $flesh-colour;
+
+  a{
+    color: $swarthy-green;
+  }
+
+  @include zero-margin(20px, 0px);
+}
+
+.jumbotron {
+  @include zero-margin(70px, 30px);
+  background: $swarthy-green;
+  color:floralwhite;
+  font-family:'Coiny';
+  .card-header{
+    color: $swarthy-green;
+    // background-color: $flesh-colour;
+  }
+}
+
+.splash {
+  // font-family: Coiny;
+  margin-top:30px;
+  margin-bottom:10px;
+}
+
+
+.carousel {
+  background: $swarthy-green;
+
+  .carousel-item {
+    height: $carousel-item-height;
+    img {
+      position: absolute;
+      top:0;
+      left:0;
+      min-height: 300px;
+      max-width:300px;
+    }
+  }
+}
+
+.menu-card {
+  width: 10rem;
+  margin-right: 10px;
+  .img {
+    height: 30px;
+    width: 30px;
+  }
+  .card-body{
+    background-color: $swarthy-green;
+    a{
+      color: $whitey;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px){
+  .menu-card{
+    width: 20rem;
+    margin-top: 20px;
+  }
+
+  .jumbotron{
+    margin: 0px;
+    padding: 0px;
+    .container-fluid {
+      margin:0px;
+      padding:0px;
+      #image {
+        padding:0px;
+      }
+    }
+  }
+}
+// .tab-content {
+//   border-left: 1px solid $lt-gray;
+//   border-right: 1px solid $lt-gray;
+//   border-bottom: 1px solid $lt-gray;
+//   padding: 10px;
+// }
