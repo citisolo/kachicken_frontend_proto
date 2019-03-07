@@ -99,11 +99,14 @@ $break-large: 600px;
   //     z-index: 1;
   //   }
   // }
-
+  th{
+    width:12%;
+  }
   #menu-header-row {
     border-width: 1.5px;
     border-style: solid;
     background-color: $sky-blue;
+    color: $whitey;
   }
 
   td {
@@ -111,6 +114,7 @@ $break-large: 600px;
     /*border-width: 0.1px;*/
     /*border-color: #c9c9c9;*/
     height:100px;
+    width:100px;
     text-align:inherit;
     border: 1.5px solid grey;
     border-bottom:none;
@@ -136,7 +140,9 @@ $break-large: 600px;
     // position:absolute;
     // width: 5em;
   }
-
+  .btn-group-vertical {
+    width:100px;
+  }
 
 }
 
@@ -185,7 +191,7 @@ $break-large: 600px;
   font-size: 150%;
 }
 
-#profile {
+#home {
   display:none;
 }
 #shoplist {
@@ -195,10 +201,25 @@ $break-large: 600px;
   height:700px;
 }
 
-.planner{
-  // height:100%;
-  margin-top:8px;
-  // padding-top:5px;
+  .planner{
+    // height:100%;
+    margin-top:8px;
+    // padding-top:5px;
+    // overflow: hidden;
+    .navbar-nav li {
+      display: inline-block;
+    }
+    .scroll {
+      white-space: nowrap;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      }
+
+}
+
+
+::-webkit-scrollbar {
+display: none;
 }
 
 .wrapper {

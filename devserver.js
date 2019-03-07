@@ -43,6 +43,7 @@ browserSync({
   files: [
   'css/*.css',
   '*.html',
+  '*.htm',
   "js/.*js"
   ]
 });

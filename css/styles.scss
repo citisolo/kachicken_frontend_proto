@@ -119,7 +119,7 @@ body{
 
     .img {
       height: 30px;
-      width: 30px;
+      width: 100%;
       border-top: solid;
     }
     .card-body{
@@ -136,9 +136,12 @@ body{
 }
 
 @media only screen and (max-width: 600px){
-  .menu-card{
-    width: 20rem;
-    margin-top: 20px;
+
+  #menu-grid{
+    .menu-card{
+      width: 100%;
+      margin-top: 20px;
+    }
   }
 
   .jumbotron{
@@ -173,4 +176,8 @@ body{
   .row{
     margin-top:30px;
   }
+}
+
+#brand {
+  margin-left:5px;
 }

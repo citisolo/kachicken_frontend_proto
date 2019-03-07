@@ -2,7 +2,7 @@ const path = require('path');
 const webpack = require('webpack');
 const CopyPlugin = require('copy-webpack-plugin');
 const HtmlPlugin = require('html-webpack-plugin');
-// const CleanWebpackPlugin = require('clean-webpack-plugin');
+const CleanWebpackPlugin = require('clean-webpack-plugin');
 
 module.exports = {
   // optimization:{
@@ -73,7 +73,7 @@ module.exports = {
       template:'./browse-recipes.html',
       inject:'head'
     }),
-    // new CleanWebpackPlugin(['dist']),
+    new CleanWebpackPlugin(),
     new CopyPlugin([
       {from: './img', to: './img'}
     ]),
