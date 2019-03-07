@@ -9,13 +9,20 @@ $break-large: 600px;
 
 $carousel-item-height: 300px;
 
+/* coiny-regular - latin */
 @font-face {
-  font-family:"Coiny";
-  src:url("css/fonts/coiny-v4-latin-regular.eot");
-  src:
-    url('css/fonts/coiny-v4-latin-regular.woff') format("woff"),
-    url('css/fonts/coiny-v4-latin-regular.svg#filename') format("svg");
+  font-family: 'Coiny';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./fonts/coiny-v4-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local('Coiny Regular'), local('Coiny-Regular'),
+       url('./fonts/coiny-v4-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('./fonts/coiny-v4-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('./fonts/coiny-v4-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('./fonts/coiny-v4-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('./fonts/coiny-v4-latin-regular.svg#Coiny') format('svg'); /* Legacy iOS */
 }
+
 
 @mixin zero-margin($pad-up-dn, $pad-left-right){
   margin: 0px auto;
@@ -35,6 +42,7 @@ $carousel-item-height: 300px;
 body{
   padding:50px 0px 0px 0px;
   z-index:0;
+  // background-color: $sky-blue;
 }
 
 
@@ -70,6 +78,9 @@ body{
   background: $swarthy-green;
   color:floralwhite;
   font-family:'Coiny';
+  img {
+    border-radius: 5px;
+  }
   .card-header{
     color: $swarthy-green;
     // background-color: $flesh-colour;
@@ -83,11 +94,12 @@ body{
 }
 
 
-.carousel {
+#mycarousel {
   background: $swarthy-green;
-
+  border-radius: 5px;
   .carousel-item {
     height: $carousel-item-height;
+    font-family:'Coiny';
     img {
       position: absolute;
       top:0;
@@ -98,19 +110,29 @@ body{
   }
 }
 
-.menu-card {
-  width: 10rem;
-  margin-right: 10px;
-  .img {
-    height: 30px;
-    width: 30px;
-  }
-  .card-body{
-    background-color: $swarthy-green;
-    a{
-      color: $whitey;
+#menu-grid {
+  .menu-card {
+    width: 10rem;
+    margin-right: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+
+    .img {
+      height: 30px;
+      width: 30px;
+      border-top: solid;
+    }
+    .card-body{
+      background-color: $swarthy-green;
+      font-family:'Coiny';
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius:10px;
+      a{
+        color: $whitey;
+      }
     }
   }
+
 }
 
 @media only screen and (max-width: 600px){
@@ -130,10 +152,25 @@ body{
       }
     }
   }
+
+
 }
+
+// @media only screen and (max-width: 1000px){
+//   .row-header {
+//     padding-left:300px;
+//     padding-right:300px;
+//   }
+// }
 // .tab-content {
 //   border-left: 1px solid $lt-gray;
 //   border-right: 1px solid $lt-gray;
 //   border-bottom: 1px solid $lt-gray;
 //   padding: 10px;
 // }
+
+#br-browser{
+  .row{
+    margin-top:30px;
+  }
+}

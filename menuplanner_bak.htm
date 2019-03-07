@@ -1,0 +1,202 @@
+<div class="planner wrapper">
+  <nav id="sidebar">
+      <div class="sidebar-header">
+          <h3>Menuplanner Sidebar</h3>
+      </div>
+
+      <ul class="list-unstyled components nav flex-column" id="myTab" role="tablist">
+          <p>Planner</p>
+          <li class="nav-item">
+            <a class="nav-link active" id="home-tab" onclick="showBrowser();">Recipe Browser</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="profile-tab" onclick="showMenu();" >Planner</a>
+          </li>
+          <li class="nav-item">
+              <a href="#">Shopping List</a>
+          </li>
+          <li>
+              <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Saved menus</a>
+              <ul class="collapse list-unstyled" id="pageSubmenu">
+                  <li>
+                      <a href="#">Menu 1</a>
+                  </li>
+                  <li>
+                      <a href="#">Menu 2</a>
+                  </li>
+                  <li>
+                      <a href="#">Menu 3</a>
+                  </li>
+              </ul>
+          </li>
+      </ul>
+  </nav>
+  <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+    <div class="grid-container tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab" >
+      <div class="grid-item">1</div>
+      <div class="grid-item">2</div>
+      <div class="grid-item">3</div>
+      <div class="grid-item">4</div>
+      <div class="grid-item">5</div>
+      <div class="grid-item">6</div>
+      <div class="grid-item">7</div>
+      <div class="grid-item">1</div>
+      <div class="grid-item">2</div>
+      <div class="grid-item">3</div>
+      <div class="grid-item">4</div>
+      <div class="grid-item">5</div>
+      <div class="grid-item">6</div>
+      <div class="grid-item">7</div>
+    </div>
+  </div>
+  <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+    <table class="menu-table table-responsive">
+     <thead id="table-header">
+       <tr class="table" id="menu-header-row">
+         <th id="menu-label-header"></th>
+         <th>Monday</th>
+         <th>Tuesday</th>
+         <th>Wednesday</th>
+         <th>Thursday</th>
+         <th>Friday</th>
+         <th>Saturday</th>
+         <th>Sunday</th>
+       </tr>
+     </thead>
+     <tbody>
+       <tr>
+         <td><span class="menu-label">Breakfast</span></td>
+         <td ></td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+       </tr>
+       <tr class="menu-add-row">
+         <td></td>
+         <td><div class="menu-item-add"><span class="menu-item-utility-add badge badge-default" ><i class="fa fa-lg fa-plus-circle"></i></span></div></td>
+         <td><div class="menu-item-add"><span class="menu-item-utility-add badge badge-default" ><i class="fa fa-lg fa-plus-circle"></i></span></div></td>
+         <td><div class="menu-item-add"><span class="menu-item-utility-add badge badge-default" ><i class="fa fa-lg fa-plus-circle"></i></span></div></td>
+         <td><div class="menu-item-add"><span class="menu-item-utility-add badge badge-default" ><i class="fa fa-lg fa-plus-circle"></i></span></div></td>
+         <td><div class="menu-item-add"><span class="menu-item-utility-add badge badge-default" ><i class="fa fa-lg fa-plus-circle"></i></span></div></td>
+         <td><div class="menu-item-add"><span class="menu-item-utility-add badge badge-default" ><i class="fa fa-lg fa-plus-circle"></i></span></div></td>
+         <td><div class="menu-item-add"><span class="menu-item-utility-add badge badge-default" ><i class="fa fa-lg fa-plus-circle"></i></span></div></td>
+       </tr>
+       <tr>
+         <td><span class="menu-label">Lunch</span></td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+       </tr>
+       <tr class="menu-add-row">
+         <td></td>
+         <td><div class="menu-item-add"><span class="menu-item-utility-add badge badge-default" ><i class="fa fa-lg fa-plus-circle"></i></span></div></td>
+         <td><div class="menu-item-add"><span class="menu-item-utility-add badge badge-default" ><i class="fa fa-lg fa-plus-circle"></i></span></div></td>
+         <td><div class="menu-item-add"><span class="menu-item-utility-add badge badge-default" ><i class="fa fa-lg fa-plus-circle"></i></span></div></td>
+         <td><div class="menu-item-add"><span class="menu-item-utility-add badge badge-default" ><i class="fa fa-lg fa-plus-circle"></i></span></div></td>
+         <td><div class="menu-item-add"><span class="menu-item-utility-add badge badge-default" ><i class="fa fa-lg fa-plus-circle"></i></span></div></td>
+         <td><div class="menu-item-add"><span class="menu-item-utility-add badge badge-default" ><i class="fa fa-lg fa-plus-circle"></i></span></div></td>
+         <td><div class="menu-item-add"><span class="menu-item-utility-add badge badge-default" ><i class="fa fa-lg fa-plus-circle"></i></span></div></td>
+       </tr>
+       <tr>
+         <td><span class="menu-label">Snack</span></td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+       </tr>
+       <tr class="menu-add-row">
+         <td></td>
+         <td><div class="menu-item-add"><span class="menu-item-utility-add badge badge-default" ><i class="fa fa-lg fa-plus-circle"></i></span></div></td>
+         <td><div class="menu-item-add"><span class="menu-item-utility-add badge badge-default" ><i class="fa fa-lg fa-plus-circle"></i></span></div></td>
+         <td><div class="menu-item-add"><span class="menu-item-utility-add badge badge-default" ><i class="fa fa-lg fa-plus-circle"></i></span></div></td>
+         <td><div class="menu-item-add"><span class="menu-item-utility-add badge badge-default" ><i class="fa fa-lg fa-plus-circle"></i></span></div></td>
+         <td><div class="menu-item-add"><span class="menu-item-utility-add badge badge-default" ><i class="fa fa-lg fa-plus-circle"></i></span></div></td>
+         <td><div class="menu-item-add"><span class="menu-item-utility-add badge badge-default" ><i class="fa fa-lg fa-plus-circle"></i></span></div></td>
+         <td><div class="menu-item-add"><span class="menu-item-utility-add badge badge-default" ><i class="fa fa-lg fa-plus-circle"></i></span></div></td>
+       </tr>
+       <tr>
+         <td><span class="menu-label">Dinner</span></td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+       </tr>
+       <tr class="menu-add-row">
+         <td></td>
+         <td><div class="menu-item-add"><span class="menu-item-utility-add badge badge-default" ><i class="fa fa-lg fa-lg fa-plus-circle"></i></span></div></td>
+         <td><div class="menu-item-add"><span class="menu-item-utility-add badge badge-default" ><i class="fa fa-lg fa-lg fa-plus-circle"></i></span></div></td>
+         <td><div class="menu-item-add"><span class="menu-item-utility-add badge badge-default" ><i class="fa fa-lg fa-lg fa-plus-circle"></i></span></div></td>
+         <td><div class="menu-item-add"><span class="menu-item-utility-add badge badge-default" ><i class="fa fa-lg fa-lg fa-plus-circle"></i></span></div></td>
+         <td><div class="menu-item-add"><span class="menu-item-utility-add badge badge-default" ><i class="fa fa-lg fa-plus-circle"></i></span></div></td>
+         <td><div class="menu-item-add"><span class="menu-item-utility-add badge badge-default" ><i class="fa fa-lg fa-plus-circle"></i></span></div></td>
+         <td><div class="menu-item-add"><span class="menu-item-utility-add badge badge-default" ><i class="fa fa-lg fa-plus-circle"></i></span></div></td>
+       </tr>
+       <tr>
+         <td><span class="menu-label">Dessert</span></td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+       </tr>
+       <tr class="menu-add-row">
+         <td></td>
+         <td><div class="menu-item-add"><span class="menu-item-utility-add badge badge-default" ><i class="fa fa-lg fa-plus-circle"></i></span></div></td>
+         <td><div class="menu-item-add"><span class="menu-item-utility-add badge badge-default" ><i class="fa fa-lg fa-plus-circle"></i></span></div></td>
+         <td><div class="menu-item-add"><span class="menu-item-utility-add badge badge-default" ><i class="fa fa-lg fa-plus-circle"></i></span></div></td>
+         <td><div class="menu-item-add"><span class="menu-item-utility-add badge badge-default" ><i class="fa fa-lg fa-plus-circle"></i></span></div></td>
+         <td><div class="menu-item-add"><span class="menu-item-utility-add badge badge-default" ><i class="fa fa-lg fa-plus-circle"></i></span></div></td>
+         <td><div class="menu-item-add"><span class="menu-item-utility-add badge badge-default" ><i class="fa fa-lg fa-plus-circle"></i></span></div></td>
+         <td><div class="menu-item-add"><span class="menu-item-utility-add badge badge-default" ><i class="fa fa-lg fa-plus-circle"></i></span></div></td>
+       </tr>
+     </tbody>
+  </div>
+  <!-- <div id="content" class="container-fluid">
+
+      <div class="row browser-head">
+        <div class="col col-md-6">
+          <div class="input-group mkss-search">
+            <input type="text" class="form-control" placeholder="Search for...">
+          </div>
+        </div>
+      </div>
+      <div class="row browser-body">
+        <div class="col">
+
+        </div>
+      </div>
+  </div> -->
+</div>
+<script type="text/javascript">
+  function showMenu(){
+    menu = document.getElementById('profile');
+    browser = document.getElementById('home');
+    menu.className = "tab-pane fade show active";
+    menu.style.display = "block";
+    browser.className = "tab-pane fade";
+    browser.style.display = "none";
+  }
+  function showBrowser(){
+    menu = document.getElementById('profile');
+    browser = document.getElementById('home');
+    browser.className = "tab-pane fade show active";
+    browser.style.display = "block";
+    menu.className = "tab-pane fade";
+    menu.style.display = "none";
+  }
+</script>

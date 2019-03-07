@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!-- <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css"/>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/menuplanner.css"> -->
+
+
+    <title>Kachicken Home</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
+      <div class="container">
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#Navbar" name="button">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a id="brand" href="./index.html" class="navbar-brand mr-auto">
+          <!-- <i class="fa fa-large fa-cutlery" aria-hidden="true"></i> -->
+          <img src="img/favicon-32x32.png" alt="">
+        </a>
+        <div class="collapse navbar-collapse " id="Navbar">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" id="create-menu-link" href="./menuplanner.html">
+                <span class="fa fa-list-alt fa-lg"></span>
+                Create Menu
+              </a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="./browse-recipes.html">
+                <span class="fa fa-cutlery fa-lg"></span>
+                Browse Recipes
+              </a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Browse Menus" aria-label="Search">
+          </form>
+          <span class="navbar-text ">
+            <a id="loginButton" class="nav-link" href="#">
+               <span class="fa fa-lg fa-sign-in"></span>
+            </a>
+          </span>
+        </div>
+      </div>
+    </nav>
+    <div id="loginModal" class="modal fade" role="dialog">
+      <div class="modal-dialog modal-lg" role="content">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Login</h4>
+            <button type="button" class="close" data-dismiss="modal" name="button">
+                &times;
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="row row-content">
+              <div class="col-12 col-md-10 offset-md-1 col-lg-6 offset-lg-3">
+                <form >
+                  <div class="form-group">
+                    <label for="username">
+                      UserName
+                    </label>
+                    <input type="text" class="form-control"  name="username">
+                  </div>
+                  <div class="form-group">
+                    <label for="userpass">
+                      Password
+                    </label>
+                    <input type="password" class="form-control" name="userpass">
+                  </div>
+                  <button type="submit" class="btn btn-primary"  name="button">Login</button>
+                  <a href="#">
+                    <small id="emailHelp" class="form-text">Don't have a login? Sign up</small>
+                  </a>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="recipeModal" class="modal fade" role="dialog">
+      <div class="modal-dialog modal-lg" role="content">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Recipe</h4>
+            <button type="button" class="close" data-dismiss="modal" name="button">
+                &times;
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="container">
+              <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="https://images.pexels.com/photos/161519/abstract-barbecue-barbeque-bbq-161519.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="Card image cap">
+                <div class="card-body">
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <ul class="list-group">
+                  <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <h1>Ingredients</h1>
+                  </li>
+                  <li class="list-group-item d-flex justify-content-between align-items-center">
+                    Mince Meat
+                    <span class="badge badge-primary badge-pill">2</span>
+                  </li>
+                  <li class="list-group-item d-flex justify-content-between align-items-center">
+                    Cheese
+                    <span class="badge badge-primary badge-pill">1</span>
+                  </li>
+                  <li class="list-group-item d-flex justify-content-between align-items-center">
+                    Burger Buns
+                    <span class="badge badge-primary badge-pill">1</span>
+                  </li>
+                </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="br-browser" class="container">
+      <div class="row">
+        <div class="col-6">
+          <div class="input-group mkss-search">
+            <input type="text" class="form-control" placeholder="Search for...">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <div id="browser-content" class="">
+            <div class="d-flex  align-content-center flex-wrap ">
+              <div class="card menu-card ">
+                <img class="card-img-top" src="https://images.pexels.com/photos/161519/abstract-barbecue-barbeque-bbq-161519.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"  alt="">
+                <div class="card-body text-white">
+                  <a href="#" data-toggle="modal" data-target="#recipeModal">
+                     <h5 class="card-title">Hamburgers</h5>
+                  </a>
+                </div>
+              </div>
+              <div class="card menu-card">
+                <img class="card-img-top" src="/img/chinese.jpeg" alt="" >
+                <div class="card-body">
+                  <a href="#" data-toggle="modal" data-target="#recipeModal">
+                    <h5 class="card-title">Chicken Chow Mein</h5>
+                  </a>
+                </div>
+              </div>
+              <div class="card menu-card">
+                <img class="card-img-top" src="/img/indian.jpeg" alt="">
+                <div class="card-body">
+                  <a href="#" data-toggle="modal" data-target="#recipeModal">
+                    <h5 class="card-title">Curry</h5>
+                  </a>
+                </div>
+              </div>
+              <div class="card menu-card">
+                <img class="card-img-top" src="/img/rice_and_peas.jpeg" alt="">
+                <div class="card-body">
+                  <a href="#" data-toggle="modal" data-target="#recipeModal">
+                    <h5 class="card-title">Rice and peas</h5>
+                  </a>
+                </div>
+              </div>
+              <div class="card menu-card">
+                <img class="card-img-top" src="https://images.pexels.com/photos/161519/abstract-barbecue-barbeque-bbq-161519.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+                <div class="card-body">
+                  <a href="#" data-toggle="modal" data-target="#recipeModal">
+                    <h5 class="card-title">Soul food</h5>
+                  </a>
+                </div>
+              </div>
+              <div class="card menu-card">
+                <img class="card-img-top" src="/img/indian.jpeg" alt="">
+                <div class="card-body">
+                  <a href="#" data-toggle="modal" data-target="#recipeModal">
+                    <h5 class="card-title">Another Curry</h5>
+                  </a>
+                </div>
+              </div>
+              <div class="card menu-card">
+                <img class="card-img-top" src="https://images.pexels.com/photos/161519/abstract-barbecue-barbeque-bbq-161519.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+                <div class="card-body">
+                  <a href="#" data-toggle="modal" data-target="#recipeModal">
+                    <h5 class="card-title">Burger Dish </h5>
+                  </a>
+                </div>
+              </div>
+              <div class="card menu-card">
+                <img class="card-img-top" src="/img/southern_comfort.jpeg" alt="">
+                <div class="card-body">
+                  <a href="#" data-toggle="modal" data-target="#recipeModal">
+                    <h5 class="card-title">Southern Dish</h5>
+                  </a>
+                </div>
+              </div>
+              <div class="card menu-card">
+                <img class="card-img-top" src="https://images.pexels.com/photos/161519/abstract-barbecue-barbeque-bbq-161519.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+                <div class="card-body">
+                  <a href="#" data-toggle="modal" data-target="#recipeModal">
+                    <h5 class="card-title">Burger dish again</h5>
+                  </a>
+                </div>
+              </div>
+              <div class="card menu-card">
+                <img class="card-img-top" src="/img/ghana.jpeg" alt="">
+                <div class="card-body">
+                  <a href="#" data-toggle="modal" data-target="#recipeModal">
+                    <h5 class="card-title">Vegan</h5>
+                  </a>
+                </div>
+              </div>
+              <div class="card menu-card">
+                <img class="card-img-top" src="/img/rice_and_peas.jpeg" alt="">
+                <div class="card-body">
+                  <a href="#" data-toggle="modal" data-target="#recipeModal">
+                    <h5 class="card-title">Rice and Peas</h5>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+
+  </script>
+</html>
