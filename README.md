@@ -16,8 +16,10 @@ Development Server:
 
     npm run start:dev
 
- Production Server:
+Production Server:
 
     npm run start:pro
 
-```
+Live Demo: 
+    https://kachicken3.herokuapp.com/
+
